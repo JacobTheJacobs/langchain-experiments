@@ -84,8 +84,7 @@ with open('transcript.txt', 'w', encoding='utf-8') as file:
 
 if transcript:
     print("Transcript extracted. Length:", len(transcript))
-    print("\nFirst 500 characters of transcript:")
-    print(transcript[:500])
+    print(transcript)
 
     print("\nGenerating summary...")
     summary = summarize_transcript(transcript)
